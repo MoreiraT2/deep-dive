@@ -3,6 +3,12 @@ on:
     pull_request:
         types: opened
     workflow_dispatch:
+    push:
+      branches:
+        - main 
+        - activity-type
+      paths-ignore:
+        - .github/workflows/*
 
 jobs:
     output: 
