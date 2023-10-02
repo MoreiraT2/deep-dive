@@ -1,5 +1,9 @@
 name: Output
-on: issues
+on:
+    pull_request:
+        types: opened
+    workflow_dispatch:
+
 jobs:
     output: 
         runs-on: ubuntu-latest
